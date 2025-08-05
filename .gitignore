@@ -39,8 +39,7 @@ Thumbs.db
 # Streamlit
 .streamlit/
 
-# Data files (optional - remove if you want to include them)
-validation_data.csv
+# Data files
 validation_votes.json
 
 # Logs
