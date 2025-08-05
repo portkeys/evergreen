@@ -182,13 +182,13 @@ def main():
             if st.button(f"👤 Human Label Better", key=f"human_{article_id}", use_container_width=True):
                 save_vote(article_id, voter_name, 'human_better')
                 st.success("Vote recorded: Human label is better!")
-                st.experimental_rerun()
+                st.rerun()
         
         with col_vote2:
             if st.button(f"🤖 Model Prediction Better", key=f"model_{article_id}", use_container_width=True):
                 save_vote(article_id, voter_name, 'model_better')
                 st.success("Vote recorded: Model prediction is better!")
-                st.experimental_rerun()
+                st.rerun()
         
         # Show existing votes for this article
         if str(article_id) in votes:
